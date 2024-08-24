@@ -1,0 +1,226 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  font-family: var(--font-family);
+  font-size: var(--base-font-size);
+
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+}
+
+h1 {
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--spacing-xs);
+
+  color: var(--primary-color);
+  margin: var(--spacing-xs) 0;
+  font-size: var(--H1-font-size);
+}
+
+h1 span {
+  font-size: var(--base-font-size);
+}
+
+h2 {
+  font-size: var(--H2-font-size);
+}
+
+/* General Settings for Buttons */
+.btn {
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: var(--border-radious);
+  background-color: var(--primary-color);
+  padding: var(--spacing-xs) var(--spacing-m);
+}
+
+.actions_btns {
+  display: flex;
+  gap: var(--spacing-s);
+  margin-bottom: var(--spacing-l);
+}
+
+@media (max-width: 850px) {
+  .actions_btns {
+    flex-direction: column;
+  }
+}
+
+/* Styles for Header-Main */
+.header {
+  display: flex;
+  align-items: center;
+  column-gap: var(--spacing-l);
+  justify-content: space-between;
+
+  background: linear-gradient(
+    to bottom,
+    #fefcea 0%,
+    var(--secondary-color) 100%
+  );
+  padding: var(--spacing-s) var(--spacing-xxl);
+  box-shadow: var(--box-shadow);
+}
+
+/* Styles for the Header logo element */
+.header_logo {
+  max-width: 20%;
+  max-height: auto;
+}
+
+.header_logo img {
+  height: auto;
+  max-width: 100%;
+}
+
+@media (max-width: 600px) {
+  .header_logo {
+    max-width: 100%;
+  }
+}
+
+/* Main Container Styles */
+.main {
+  display: flex;
+  flex-direction: column;
+
+  width: 80%;
+  margin: var(--spacing-xl) auto;
+}
+
+@media (max-width: 600px) {
+  .main {
+    width: 90%;
+  }
+}
+
+/* Seminar-Container & Seminars Styles on Main-Page */
+.seminars {
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--spacing-s);
+}
+
+.seminar {
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--spacing-xxxs);
+
+  box-shadow: var(--box-shadow);
+  padding: var(--spacing-l) var(--spacing-l);
+}
+
+.seminar .title {
+  font-weight: 600;
+  font-size: var(--H2-font-size);
+}
+
+.seminar .title a {
+  text-decoration: none;
+  color: var(--primary-color);
+  border-bottom: 1px inset var(--primary-color);
+}
+
+.seminar .description {
+  word-wrap: keep-all;
+  margin: var(--spacing-xxs) 0;
+}
+
+.seminar span {
+  font-size: var(--small-font-size);
+}
+
+/* General Form-Container & HTML-Form Styles */
+.form_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: var(--spacing-m) 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--spacing-xs);
+
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radious);
+  padding: var(--spacing-s) var(--spacing-m);
+}
+
+form div {
+  display: grid;
+  row-gap: var(--spacing-xxs);
+}
+
+form .date,
+form .time {
+column-gap: var(--spacing-s);
+  grid-template-columns: 1fr 1fr;
+}
+
+form label,
+input::placeholder {
+  font-family: inherit;
+  font-size: var(--base-font-size);
+}
+
+input,
+select,
+textarea {
+  border: none;
+  font-family: inherit;
+  letter-spacing: inherit;
+  border-radius: var(--border-radious);
+  border: 1px inset var(--border-color);
+  padding: var(--spacing-xxs) var(--spacing-xxs);
+}
+
+/* Footer Styles */
+.footer {
+  font-size: inherit;
+  padding: var(--spacing-m) var(--spacing-xxl);
+  background: linear-gradient(to top, #fefcea 0%, var(--secondary-color) 100%);
+}
+
+.footer ul {
+  display: flex;
+  column-gap: var(--spacing-s);
+
+  cursor: pointer;
+  list-style: none;
+}
+
+/* Global Class to use for links */
+.link {
+  text-decoration: none;
+  /*display: inline-block;*/
+  color: var(--primary-color);
+  border-bottom: 1px solid var(--primary-color);
+}
+
+/* Global Class for user Error-Messages */
+.error {
+  font-weight: 600;
+  color: var(--error-color);
+}
+
+/* Global Class to use Information-Messages */
+.info {
+  font-weight: 600;
+  color: var(--primary-color);
+}

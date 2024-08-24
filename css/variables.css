@@ -1,0 +1,31 @@
+:root {
+  --primary-color: #009a67;
+  --secondary-color: #ffffaa;
+  --error-color: #b22222;
+
+  --small-font-size: 12px;
+  --base-font-size: 14px;
+  --font-family: "Open Sans", sans-serif;
+
+  /*Variables for Headings Sizes*/
+  --H1-font-size: 24px;
+  --H2-font-size: 16px;
+
+  /*Varibales for Border Styling*/
+  --border-color: #e3e3e3;
+  --border-radious: 4px;
+
+  /*Variable for Box-shadow*/
+  --box-shadow: 0px 0px 11px 5px rgba(0, 0, 0, 0.1);
+
+  /*Variables for Marin, Paddings and Gap*/
+  --spacing-xxxs: 3px;
+  --spacing-xxs: 6px;
+  --spacing-xs: 12px;
+  --spacing-s: 18px;
+  --spacing-m: 24px;
+  --spacing-l: 30px;
+  --spacing-xl: 36px;
+  --spacing-xxl: 42px;
+  --spacing-xxxl: 48px;
+}

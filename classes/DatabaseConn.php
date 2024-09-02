@@ -5,9 +5,9 @@ class DatabaseConn
       public function getConn()
       {
             $db_host = "localhost";
-            $db_name = "Database-Name";
-            $db_user = "username";
-            $db_pass = "password";
+            $db_name = "DATABASE-NAME";
+            $db_user = "USERNAME";
+            $db_pass = "PASSWORD";
             $dsn = 'mysql:host=' . $db_host . ';dbname=' . $db_name . ';charset=utf8';
 
             try
